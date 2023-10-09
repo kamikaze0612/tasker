@@ -1,0 +1,36 @@
+.boardForm {
+  background-color: var(--color-secondary);
+  padding: 2.4rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.boardForm h2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.closeBtn {
+  cursor: pointer;
+  font-size: 3.2rem;
+}
+
+.boardForm input {
+  margin-top: 1.2rem;
+  margin-bottom: 1.6rem;
+  font-family: "Manrope", sans-serif;
+  font-size: 1.6rem;
+  padding: 6px 1.2rem;
+  border-radius: 8px;
+  display: block;
+  width: 100%;
+}
+
+.boardForm input:focus {
+  outline: none;
+}
+
+.boardForm input::placeholder {
+  color: var(--text-color-secondary);
+}

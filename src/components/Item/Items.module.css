@@ -1,0 +1,30 @@
+.items {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  flex: 0 0 40rem;
+}
+
+.items h2 {
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+  color: var(--text-color-secondary);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1.4rem;
+}
+
+.circle {
+  display: block;
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
+}
+
+.tasksList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}

@@ -1,0 +1,8 @@
+.sidebar {
+  background-color: var(--color-tertiary);
+  flex: 0 0 20vw;
+  border-right: var(--border-primary);
+  padding-bottom: 1.6rem;
+  display: flex;
+  flex-direction: column;
+}

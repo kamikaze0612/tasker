@@ -1,0 +1,7 @@
+.plannerBox {
+  padding: 3.2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3.2rem;
+  position: relative;
+}

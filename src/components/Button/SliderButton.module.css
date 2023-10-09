@@ -1,0 +1,22 @@
+.sliderBtn {
+  border-radius: 100px;
+  background-color: var(--color-primary);
+  height: 24px;
+  width: 48px;
+  position: relative;
+  cursor: pointer;
+}
+
+.slider {
+  height: 20px;
+  width: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+}
+
+.sliderBtn > .clicked {
+  right: 2px;
+}

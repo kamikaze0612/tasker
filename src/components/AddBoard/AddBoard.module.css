@@ -1,0 +1,19 @@
+.addBoard {
+  cursor: pointer;
+  align-self: flex-start;
+  padding: 1.6rem 3.2rem;
+  border: none;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  color: var(--color-primary);
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+
+.icon {
+  height: 1.6rem;
+  width: 1.6rem;
+  fill: var(--color-primary);
+}

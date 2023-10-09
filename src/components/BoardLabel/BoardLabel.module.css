@@ -1,0 +1,21 @@
+.boardLabel {
+  padding: 1.6rem 3.2rem;
+  display: flex;
+  align-items: center;
+  font-size: 1.6rem;
+  color: var(--text-color-secondary);
+  gap: 1.6rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+:global(.active) {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+.icon {
+  height: 1.6rem;
+  width: 1.6rem;
+  fill: currentColor;
+}

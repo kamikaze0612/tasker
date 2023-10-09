@@ -1,0 +1,18 @@
+.sidebarHeader {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.2rem;
+  padding: 3.2rem;
+}
+
+.sidebarHeader p {
+  font-size: 3.6rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  color: #fff;
+}
+
+img {
+  height: 2.6rem;
+}

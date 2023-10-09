@@ -1,0 +1,13 @@
+.plannerHeader {
+  padding: 3.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--color-tertiary);
+  border-bottom: var(--border-primary);
+}
+
+p {
+  font-size: 2.8rem;
+  font-weight: 700;
+}

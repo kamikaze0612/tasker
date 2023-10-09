@@ -1,0 +1,30 @@
+:root {
+  --text-color-primary: #f8f9fa;
+  --text-color-secondary: rgb(132, 144, 163);
+  --color-primary: #5f3dc4;
+  --color-secondary: #1f1f29;
+  --color-tertiary: #2b2b36;
+  --border-primary: 1px solid rgb(64, 59, 71);
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  line-height: 1;
+  font-weight: 400;
+  font-family: "Manrope", sans-serif;
+  color: var(--text-color-primary);
+  box-sizing: border-box;
+  position: relative;
+  background-color: var(--color-secondary);
+}

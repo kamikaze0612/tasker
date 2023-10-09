@@ -1,0 +1,16 @@
+.subBox {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.subBox span {
+  color: var(--text-color-secondary);
+}
+
+.closeBtn {
+  border: none;
+  cursor: pointer;
+  font-size: 3.2rem;
+  background-color: transparent;
+}

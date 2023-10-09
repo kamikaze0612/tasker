@@ -1,0 +1,46 @@
+.item {
+  background-color: var(--color-tertiary);
+  padding: 3.2rem 2rem;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  font-size: 1.6rem;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.numSubTasks {
+  font-size: 1.2rem;
+  color: var(--text-color-secondary);
+}
+
+.taskDesc {
+  margin-top: 0.8rem;
+  font-size: 1.4rem;
+  color: var(--text-color-secondary);
+}
+
+.subtaskList {
+  margin-top: 1.6rem;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.subtask {
+  font-size: 1.2rem;
+  color: var(--text-color-secondary);
+}
+
+.line {
+  height: 100%;
+  width: 4px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}

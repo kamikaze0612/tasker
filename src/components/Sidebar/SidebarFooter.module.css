@@ -1,0 +1,35 @@
+.sidebarFooter {
+  width: 100%;
+  margin: auto auto 0 auto;
+  padding: 0.6rem 1.2rem;
+  display: flex;
+  gap: 1.6rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modeToggle {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  gap: 1.6rem;
+  background-color: var(--color-secondary);
+  padding: 1.6rem;
+}
+
+.icon {
+  fill: var(--text-color-secondary);
+  color: var(--text-color-secondary);
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+.author {
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-align: center;
+  line-height: 1.5;
+}

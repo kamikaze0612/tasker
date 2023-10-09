@@ -1,0 +1,24 @@
+.btn {
+  border: none;
+  border-radius: 150px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding: 1.6rem 2.4rem;
+  cursor: pointer;
+  box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
+  transition: all 0.4s;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.white {
+  background-color: var(--text-color-primary);
+  color: var(--color-primary);
+}
+
+.primary {
+  background-color: var(--color-primary);
+  color: currentColor;
+}

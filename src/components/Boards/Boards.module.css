@@ -1,0 +1,12 @@
+.boards {
+  display: flex;
+  flex-direction: column;
+}
+
+.boards p {
+  font-size: 1.2rem;
+  padding: 2.4rem 3.2rem;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--text-color-secondary);
+}
