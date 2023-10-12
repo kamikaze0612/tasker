@@ -72,7 +72,7 @@ function Item({ taskTitle, lineColor, subtasks, taskDesc, status, id }) {
             </ul>
           )}
           <div className={styles.changeStatus}>
-            <span style={{ fontSize: "1.4rem" }}>Change status of task:</span>
+            <span>Change status:</span>
             <select
               value={taskStatus}
               onChange={handleChangeStatus}

@@ -41,6 +41,7 @@
 
 .subtask {
   font-size: 1.2rem;
+  line-height: 1.4;
   font-weight: 500;
   color: var(--text-color-secondary);
 }
@@ -60,6 +61,10 @@
   margin-bottom: 1.6rem;
 }
 
+.changeStatus {
+  font-size: 1.4rem;
+}
+
 .change {
   border: var(--border-primary);
   padding: 0.6rem;
@@ -75,4 +80,28 @@
 
 .deleteBtn {
   align-self: flex-end;
+}
+
+@media screen and (max-width: 64em) {
+  .taskTitle {
+    font-size: 1.4rem;
+    display: block;
+    line-height: 1.4;
+  }
+
+  .taskDesc {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 48em) {
+  .item {
+    padding: 2.4rem;
+  }
+}
+
+@media screen and (max-width: 48em) {
+  .changeStatus {
+    font-size: 1.2rem;
+  }
 }

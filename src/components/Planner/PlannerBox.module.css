@@ -5,3 +5,10 @@
   gap: 3.2rem;
   position: relative;
 }
+
+@media screen and (max-width: 48em) {
+  .plannerBox {
+    padding: 2.4rem;
+    gap: 2.4rem;
+  }
+}

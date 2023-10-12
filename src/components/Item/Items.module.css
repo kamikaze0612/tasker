@@ -28,3 +28,9 @@
   flex-direction: column;
   gap: 2.4rem;
 }
+
+@media screen and (max-width: 48em) {
+  .items {
+    gap: 1.6rem;
+  }
+}

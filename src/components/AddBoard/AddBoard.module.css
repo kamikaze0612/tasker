@@ -17,3 +17,15 @@
   width: 1.6rem;
   fill: var(--color-primary);
 }
+
+@media screen and (max-width: 78.75em) {
+  .addBoard {
+    padding: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 64em) {
+  .addBoard {
+    font-size: 1.4rem;
+  }
+}

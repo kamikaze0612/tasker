@@ -19,3 +19,15 @@
   width: 1.6rem;
   fill: currentColor;
 }
+
+@media screen and (max-width: 78.75em) {
+  .boardLabel {
+    padding: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 64em) {
+  .boardLabel {
+    font-size: 1.4rem;
+  }
+}

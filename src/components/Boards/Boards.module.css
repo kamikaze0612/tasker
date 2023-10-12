@@ -10,3 +10,9 @@
   text-transform: uppercase;
   color: var(--text-color-secondary);
 }
+
+@media screen and (max-width: 64em) {
+  .boards p {
+    letter-spacing: 2px;
+  }
+}

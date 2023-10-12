@@ -34,3 +34,10 @@
   font-weight: 600;
   box-shadow: none;
 }
+
+@media screen and (max-width: 78.75em) {
+  .btn {
+    font-size: 1.4rem;
+    padding: 1.2rem 1.6rem;
+  }
+}

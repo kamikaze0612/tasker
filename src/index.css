@@ -41,3 +41,15 @@ body {
   position: relative;
   background-color: var(--color-secondary);
 }
+
+@media screen and (max-width: 78.75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media screen and (max-width: 48em) {
+  html {
+    font-size: 50%;
+  }
+}

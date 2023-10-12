@@ -16,3 +16,9 @@
 img {
   height: 2.6rem;
 }
+
+@media screen and (max-width: 64em) {
+  .sidebarHeader p {
+    font-size: 3rem;
+  }
+}

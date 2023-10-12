@@ -1,10 +1,11 @@
 /* eslint-disable react/prop-types */
 import BoardLabel from "../BoardLabel/BoardLabel";
 import AddBoard from "../AddBoard/AddBoard";
+import BoardForm from "../BoardLabel/BoardForm";
+
+import { useTasks } from "../../contexts/TaskContext";
 
 import styles from "./Boards.module.css";
-import BoardForm from "../BoardLabel/BoardForm";
-import { useTasks } from "../../contexts/TaskContext";
 
 function Boards() {
   const {
