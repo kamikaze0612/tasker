@@ -15,8 +15,11 @@
   position: absolute;
   top: 2px;
   left: 2px;
+  transition: all 0.5s;
 }
 
-.sliderBtn > .clicked {
+.slider:global(.clicked) {
+  top: 2px;
   right: 2px;
+  left: auto;
 }

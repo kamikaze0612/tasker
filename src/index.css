@@ -1,10 +1,23 @@
 :root {
   --text-color-primary: #f8f9fa;
   --text-color-secondary: rgb(132, 144, 163);
+  --text-color-header: #fff;
+  --text-color-button: #5f3dc4;
   --color-primary: #5f3dc4;
   --color-secondary: #1f1f29;
   --color-tertiary: #2b2b36;
   --border-primary: 1px solid rgb(64, 59, 71);
+}
+
+.light-mode {
+  --text-color-primary: #212529;
+  --text-color-secondary: #495057;
+  --text-color-header: #000;
+  --text-color-button: #fff;
+  --color-primary: #5f3dc4;
+  --color-secondary: #f3f0ff;
+  --color-tertiary: #fff;
+  --border-primary: 1px solid rgb(227, 217, 241);
 }
 
 *,

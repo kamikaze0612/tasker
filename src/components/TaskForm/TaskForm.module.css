@@ -64,12 +64,12 @@
   font-family: "Manrope", sans-serif;
   background-color: var(--color-tertiary);
   outline: none;
-  border: 1px solid rgb(64, 59, 71);
+  border: var(--border-primary);
 }
 
 .taskForm select {
   background-color: transparent;
-  border: 1px solid rgb(64, 59, 71);
+  border: var(--border-primary);
   border-radius: 4px;
   padding: 8px 1.2rem;
   color: var(--text-color-primary);

@@ -1,16 +1,20 @@
+/* eslint-disable react/prop-types */
 import SliderButton from "../Button/SliderButton";
 
 import styles from "./SidebarFooter.module.css";
 import icon from "../../img/sprite.svg";
 
-function SidebarFooter() {
+function SidebarFooter({ isDarkMode, onToggleDarkMode }) {
   return (
     <footer className={styles.sidebarFooter}>
       <div className={styles.modeToggle}>
         <svg className={styles.icon}>
           <use xlinkHref={`${icon}#icon-sun-fill`}></use>
         </svg>
-        <SliderButton />
+        <SliderButton
+          isDarkMode={isDarkMode}
+          onToggleDarkMode={onToggleDarkMode}
+        />
         <svg className={styles.icon}>
           <use xlinkHref={`${icon}#icon-moon-fill`}></use>
         </svg>

@@ -1,15 +1,18 @@
 /* eslint-disable react/prop-types */
+import { useTasks } from "../../contexts/TaskContext";
 import Button from "../Button/Button";
 
 import styles from "./PlannerHeader.module.css";
 
-function PlannerHeader({ onToggleTaskForm }) {
+function PlannerHeader() {
+  const { setShowTaskForm, state, boardIndex } = useTasks();
+
   function handleShowForm() {
-    onToggleTaskForm((cur) => !cur);
+    setShowTaskForm((cur) => !cur);
   }
   return (
     <header className={styles.plannerHeader}>
-      <p>Platform Launch</p>
+      <p>{state[boardIndex].boardTitle}</p>
       <Button onClick={handleShowForm} type={"primary"}>
         + Add New Task
       </Button>

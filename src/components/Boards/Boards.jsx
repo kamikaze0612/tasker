@@ -4,32 +4,35 @@ import AddBoard from "../AddBoard/AddBoard";
 
 import styles from "./Boards.module.css";
 import BoardForm from "../BoardLabel/BoardForm";
+import { useTasks } from "../../contexts/TaskContext";
 
-function Boards({
-  dispatch,
-  boards,
-  index,
-  onClickLabel,
-  onToggleBoardForm,
-  showBoardForm,
-}) {
+function Boards() {
+  const {
+    dispatch,
+    state,
+    boardIndex,
+    setBoardIndex,
+    setShowBoardForm,
+    showBoardForm,
+  } = useTasks();
+
   return (
     <div className={styles.boards}>
-      <p>All boards ({boards.length})</p>
-      {boards.length > 0
-        ? boards.map((board) => (
+      <p>All boards ({state.length})</p>
+      {state.length > 0
+        ? state.map((board) => (
             <BoardLabel
-              onClickLabel={() => onClickLabel(board.id - 1)}
-              isActive={board.id - 1 === index}
+              onClickLabel={() => setBoardIndex(board.id - 1)}
+              isActive={board.id - 1 === boardIndex}
               key={board.id}
             >
               {board.boardTitle}
             </BoardLabel>
           ))
         : ""}
-      {!showBoardForm && <AddBoard onToggleBoardForm={onToggleBoardForm} />}
+      {!showBoardForm && <AddBoard onToggleBoardForm={setShowBoardForm} />}
       {showBoardForm && (
-        <BoardForm dispatch={dispatch} onToggleBoardForm={onToggleBoardForm} />
+        <BoardForm dispatch={dispatch} onToggleBoardForm={setShowBoardForm} />
       )}
     </div>
   );

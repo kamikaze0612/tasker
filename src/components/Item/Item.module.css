@@ -5,16 +5,21 @@
   overflow: hidden;
   position: relative;
   font-size: 1.6rem;
-  font-weight: 600;
+  font-weight: 700;
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
   cursor: pointer;
-  transition: all 0.5s;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+}
+
+.taskTitle {
+  font-size: inherit;
 }
 
 .numSubTasks {
   font-size: 1.2rem;
+  font-weight: 500;
   color: var(--text-color-secondary);
 }
 
@@ -22,10 +27,12 @@
   margin-top: 0.8rem;
   font-size: 1.4rem;
   color: var(--text-color-secondary);
+  line-height: 1.5;
+  font-weight: 500;
 }
 
 .subtaskList {
-  margin-top: 1.6rem;
+  margin: 1.6rem 0;
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -34,6 +41,7 @@
 
 .subtask {
   font-size: 1.2rem;
+  font-weight: 500;
   color: var(--text-color-secondary);
 }
 
@@ -43,4 +51,28 @@
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.changeStatus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.6rem;
+}
+
+.change {
+  border: var(--border-primary);
+  padding: 0.6rem;
+  font-size: 1.2rem;
+  border-radius: 4px;
+  background-color: var(--color-tertiary);
+  color: var(--text-color-primary);
+}
+
+.change:focus {
+  outline: none;
+}
+
+.deleteBtn {
+  align-self: flex-end;
 }

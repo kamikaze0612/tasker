@@ -4,11 +4,11 @@ import PlannerBox from "./PlannerBox";
 
 import styles from "./Planner.module.css";
 
-function Planner({ tasks, onToggleTaskForm }) {
+function Planner() {
   return (
     <div className={styles.planner}>
-      <PlannerHeader onToggleTaskForm={onToggleTaskForm} />
-      <PlannerBox tasks={tasks} />
+      <PlannerHeader />
+      <PlannerBox />
     </div>
   );
 }

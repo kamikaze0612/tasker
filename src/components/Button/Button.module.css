@@ -15,10 +15,22 @@
 
 .white {
   background-color: var(--text-color-primary);
-  color: var(--color-primary);
+  color: var(--text-color-button);
 }
 
 .primary {
   background-color: var(--color-primary);
-  color: currentColor;
+  color: #fff;
+}
+
+.red {
+  background-color: #fa5252;
+  color: #fff;
+}
+
+.small {
+  font-size: 1.6rem;
+  padding: 1.2rem 1.6rem;
+  font-weight: 600;
+  box-shadow: none;
 }

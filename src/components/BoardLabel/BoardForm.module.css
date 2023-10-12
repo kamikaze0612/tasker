@@ -25,6 +25,7 @@
   border-radius: 8px;
   display: block;
   width: 100%;
+  border: var(--border-primary);
 }
 
 .boardForm input:focus {

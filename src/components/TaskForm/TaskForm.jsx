@@ -4,13 +4,20 @@ import Button from "../Button/Button";
 
 import styles from "./TaskForm.module.css";
 import SubTaskInput from "./SubTaskInput";
+import { useTasks } from "../../contexts/TaskContext";
 
-function TaskForm({ onToggleTaskForm, curBoard, dispatch }) {
+function TaskForm() {
   const [taskTitle, setTaskTitle] = useState("");
   const [taskDesc, setTaskDesc] = useState("");
   const [subTaskLength, setTaskLength] = useState(1);
   const [taskStatus, setTaskStatus] = useState("to do");
   const [subtasks, setSubtasks] = useState({});
+
+  const context = useTasks();
+
+  const onToggleTaskForm = context.setShowTaskForm;
+  const curBoard = context.state[context.boardIndex];
+  const { dispatch } = context;
 
   const handleCloseForm = useCallback(
     function () {
