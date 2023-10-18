@@ -4,75 +4,6 @@ import { createContext, useContext, useReducer, useState } from "react";
 
 const TaskContext = createContext();
 
-const initialState = [
-  {
-    id: 1,
-    boardTitle: "House Chores",
-    tasks: [
-      {
-        taskId: 123524,
-        taskTitle: "Do the laundry",
-        description: "Wash the clothes in the basket",
-        status: "to do",
-        subtasks: {
-          0: "Lorem ipsum dolor sit amet.",
-          1: "Donec quam felis, ultricies nec",
-        },
-      },
-      {
-        taskId: 1356524,
-        taskTitle: "Clean the room",
-        description: "Helps mental health wellness",
-        status: "doing",
-        subtasks: {},
-      },
-    ],
-  },
-  {
-    id: 2,
-    boardTitle: "Marketting Plan",
-    tasks: [
-      {
-        taskId: 453524,
-        taskTitle: "Create the graph",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-        status: "to do",
-        subtasks: {},
-      },
-      {
-        taskId: 157624,
-        taskTitle: "Meet with the boss",
-        description:
-          "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut, atque!",
-        status: "done",
-        subtasks: {},
-      },
-    ],
-  },
-  {
-    id: 3,
-    boardTitle: "Roadmap",
-    tasks: [
-      {
-        taskId: 123464,
-        taskTitle: "Draw up the roadmap",
-        description:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, aliquid?",
-        status: "doing",
-        subtasks: {},
-      },
-      {
-        taskId: 109234,
-        taskTitle: "Brainstorm new ideas",
-        description:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, perspiciatis!",
-        status: "done",
-        subtasks: {},
-      },
-    ],
-  },
-];
-
 function reducer(state, { type, payload }) {
   switch (type) {
     case "addTask":
@@ -135,7 +66,7 @@ function reducer(state, { type, payload }) {
 }
 
 function TaskContextProvider({ children }) {
-  const [state, dispatch] = useReducer(reducer, initialState);
+  const [state, dispatch] = useReducer(reducer, []);
   const [boardIndex, setBoardIndex] = useState(0);
   const [showTaskForm, setShowTaskForm] = useState(false);
   const [showBoardForm, setShowBoardForm] = useState(false);
